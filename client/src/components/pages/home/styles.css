@@ -1,0 +1,105 @@
+header h1 {
+  text-align: center;
+  color: #464545;
+  font-size: 3rem;
+}
+
+/* .cards .image-frame {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+.cards .image-frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5%;
+}
+
+.form {
+  width: 40%;
+  margin: 0 10px 10px 0;
+}
+.cards {
+  margin: 0 0 10px 10px;
+  width: 60%;
+}
+.cards .card {
+  background-color: white;
+}
+.cards .card h2 {
+  margin: 0  0 20px 0;
+  padding: 0;
+}
+.cards .card ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card li {
+  padding: 10px;
+  box-shadow: 0px 1px 8px -3px #1c1c1c4f;
+  margin: 10px;
+  font-size: 1.5rem;
+  width: 300px;
+  color: #512505;
+  position: relative;
+}
+.cards .card h3 {
+  font-size: 18px;
+}
+.cards .card p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  letter-spacing: 0.025rem;
+}
+.cards .card li .status {
+  font-size: 12px;
+  position: absolute;
+  color: #f92c2c;
+  top: 10px;
+  text-align: end;
+  right: 5px;
+}
+.cards .card li .status .delete {
+  color: #f92c2c;
+  padding: 5px;
+  cursor: pointer;
+}
+.cards .card li .completed {
+  display: flex;
+  color: #40771b;
+  align-items: center;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+.cards .card li .completed input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .form,
+  .cards {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .form,
+  .cards {
+    width: 100%;
+  }
+}
